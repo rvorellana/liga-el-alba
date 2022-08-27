@@ -2,6 +2,7 @@ import React, { useState, useEffect, useCallback } from "react";
 import logo from "./../logo.png";
 
 const Navbar = () => {
+  const [open, setOpen] = useState(false);
   return (
     <div className="App">
       <nav className="px-2 bg-white border-gray-200 ">
@@ -15,9 +16,10 @@ const Navbar = () => {
           <button
             data-collapse-toggle="mobile-menu"
             type="button"
-            className="inline-flex justify-center items-center ml-3 text-gray-400 rounded-lg md:hidden hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300 "
+            className="inline-flex justify-center items-center ml-3 text-gray-400 rounded-lg md:hidden hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-red-300 "
             aria-controls="mobile-menu-2"
-            aria-expanded="false"
+            aria-expanded="true"
+            onClick={() => setOpen(!open)}
           >
             <span className="sr-only">Open main menu</span>
             <svg
@@ -28,13 +30,20 @@ const Navbar = () => {
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                clip-rule="evenodd"
+                clipRule="evenodd"
               ></path>
             </svg>
           </button>
-          <div className="hidden w-full md:block md:w-auto" id="mobile-menu">
+          <div
+            className={
+              open
+                ? "w-full md:block md:w-auto"
+                : "hidden w-full md:block md:w-auto"
+            }
+            id="mobile-menu"
+          >
             <ul className="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white ">
               <li>
                 <a
