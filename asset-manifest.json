@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/liga-el-alba/static/css/main.69a83acb.css",
-    "main.js": "/liga-el-alba/static/js/main.bbc6ad1b.js",
+    "main.js": "/liga-el-alba/static/js/main.ef476f83.js",
     "static/media/banner.png": "/liga-el-alba/static/media/banner.38995fa1258fca96b9c7.png",
     "static/media/logo.png": "/liga-el-alba/static/media/logo.243a5b54db7641258e3c.png",
     "index.html": "/liga-el-alba/index.html",
     "main.69a83acb.css.map": "/liga-el-alba/static/css/main.69a83acb.css.map",
-    "main.bbc6ad1b.js.map": "/liga-el-alba/static/js/main.bbc6ad1b.js.map"
+    "main.ef476f83.js.map": "/liga-el-alba/static/js/main.ef476f83.js.map"
   },
   "entrypoints": [
     "static/css/main.69a83acb.css",
-    "static/js/main.bbc6ad1b.js"
+    "static/js/main.ef476f83.js"
   ]
 }
