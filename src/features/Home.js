@@ -1,13 +1,12 @@
 import React, { useState, useEffect, useCallback } from "react";
-import Navbar from "./Navbar";
-import Banner from "./Banner";
-import Form from "./Form";
+import Banner from "../components/Home/Banner";
 
 const Home = () => {
   return (
-    <div className="App mx-auto">
-      <Navbar />
-      <Banner />
+    <div>
+      <div className="App mx-auto">
+        <Banner />
+      </div>
     </div>
   );
 };

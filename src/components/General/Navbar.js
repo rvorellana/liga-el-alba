@@ -1,18 +1,19 @@
 import React, { useState, useEffect, useCallback } from "react";
-import logo from "./../logo.png";
+import logo from "./../../logo.png";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
     <div className="App">
-      <nav className="px-2 bg-white border-gray-200 ">
-        <div className="container flex flex-wrap justify-between items-center mx-auto">
-          <a href="/" className="flex items-center">
-            <img src={logo} className="mr-3 h-6 sm:h-10" alt="" />
-            <span className="self-center text-xl font-semibold whitespace-nowrap">
+      <nav className="px-2 bg-white border-gray-200  ">
+        <div className="container py-2 flex flex-wrap justify-between items-center mx-auto md:">
+          <Link to="/" className="flex items-center">
+            <img src={logo} className="mr-3 h-16 sm:h-16" alt="" />
+            <span className="self-center font-semibold whitespace-nowrap md:text-xl text-3xl">
               Liga El Alba
             </span>
-          </a>
+          </Link>
           <button
             data-collapse-toggle="mobile-menu"
             type="button"
@@ -46,36 +47,20 @@ const Navbar = () => {
           >
             <ul className="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white ">
               <li>
-                <a
-                  href="/"
-                  className="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 "
+                <Link
+                  to="/"
+                  className="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-rose-800 md:p-0 "
                 >
                   Inicio
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/"
-                  className="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 "
+                <Link
+                  to="/tables"
+                  className="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-rose-800 md:p-0 "
                 >
                   Torneos
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/"
-                  className="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 "
-                >
-                  Ubicación
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/"
-                  className="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 "
-                >
-                  Nosotros
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
