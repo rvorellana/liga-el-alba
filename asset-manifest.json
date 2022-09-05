@@ -1,17 +1,15 @@
 {
   "files": {
-    "main.css": "/liga-el-alba/static/css/main.cf49ee8b.css",
-    "main.js": "/liga-el-alba/static/js/main.d0644454.js",
-    "static/js/787.633816a4.chunk.js": "/liga-el-alba/static/js/787.633816a4.chunk.js",
+    "main.css": "/liga-el-alba/static/css/main.69a83acb.css",
+    "main.js": "/liga-el-alba/static/js/main.48bbcc31.js",
     "static/media/banner.png": "/liga-el-alba/static/media/banner.38995fa1258fca96b9c7.png",
     "static/media/logo.png": "/liga-el-alba/static/media/logo.243a5b54db7641258e3c.png",
     "index.html": "/liga-el-alba/index.html",
-    "main.cf49ee8b.css.map": "/liga-el-alba/static/css/main.cf49ee8b.css.map",
-    "main.d0644454.js.map": "/liga-el-alba/static/js/main.d0644454.js.map",
-    "787.633816a4.chunk.js.map": "/liga-el-alba/static/js/787.633816a4.chunk.js.map"
+    "main.69a83acb.css.map": "/liga-el-alba/static/css/main.69a83acb.css.map",
+    "main.48bbcc31.js.map": "/liga-el-alba/static/js/main.48bbcc31.js.map"
   },
   "entrypoints": [
-    "static/css/main.cf49ee8b.css",
-    "static/js/main.d0644454.js"
+    "static/css/main.69a83acb.css",
+    "static/js/main.48bbcc31.js"
   ]
 }
