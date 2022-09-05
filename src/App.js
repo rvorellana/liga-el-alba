@@ -9,11 +9,11 @@ function App() {
     <div className="w-auto h-screen pb-4 bg-gray-200">
       <Navbar />
       <main>
-        <Route exact path="/" component={Home} />
-        <Route path="/home">
+        <Route exact path="/ligaelalba" component={Home} />
+        <Route path="ligaelalba/home">
           <Home />
         </Route>
-        <Route path="/tables">
+        <Route path="ligaelalba/tables">
           <Table />
         </Route>
       </main>
